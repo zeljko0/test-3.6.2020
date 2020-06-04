@@ -1,0 +1,154 @@
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading;
+using System.Security.Cryptography;
+using System.Runtime.CompilerServices;
+using System.Collections.Concurrent;
+using System.Net.Http.Headers;
+using System.ComponentModel.Design;
+
+namespace тест_3._6._2020
+{
+    class Program
+        private Excel.Application App;
+    private Excel.Workbook Workbook;
+    private Excel.Worksheet Sheet;
+    public CSVHandler()
+    {
+        this.App = new Excel.aPPLICATION();
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+        PublicKey Excel. Worksheet OpenCSV(starting CSBVFile, string Delimiter = ',')
+        {
+            this.Workbook = this.App.Workbook.Open(CSVFile, Format: Excel.XIFileFormat.xICSV. Delimeter: CSVDelimeter);
+            this.Sheet = this.Workbook.ActiveSheet;
+            return this.Sheet;
+        }
+        public void Close()
+        {
+        this.Workbook.Close();
+        this.App.Quit();
+
+        Marshal.ReleaseComObject(this.Workbook);
+        Marshal.ReleaseComObject(this.App);
+
+        this.Workbook = null;
+        this.App = null;
+        IWebElement element = null;
+        try
+        {
+            Wait.Until(EC.ElementisVisible(By.XPath("//a[@herf 0`/login`]")));
+            element = this.driver.FindElement(By.XPath("//a[@herf 0`/login`]")));
+        } catch (Exception)
+        {
+        }
+        return element;
+     }
+     public IWebElement WelcomeBack
+    { 
+        get
+        {
+            IWebElement element = null;
+            try
+            {
+              WaitCallback.Until(EC.ElementIsVisible(By.XPath("//h2[contani(text(),`Welcome back,`)]")));
+              element = this.driver.FindElement(By.XPath("//h2[contani(text(),`Welcome back,`)]"));
+            }catch (Exception)
+            {
+            }return element;
+
+        }
+     }
+    public IWebElement LinkLogout
+    {
+        get
+        {
+            IWebElement element = null;
+            try
+            {
+                Wait.Until(EC.ElementIsVisible(By.Name("login")));
+                element = this.driver.FindElement(By.Name("login"));
+            }
+            catch( Exception)
+            {
+            }
+            return element;
+
+        }
+    }
+    public HomePage login(sring username, string password);
+        {
+           UsernameInput.SendKeys(username);
+           PasswordInput.SendKeys(password);
+           LoginButton.Click();
+           //wait.Until(EC.ElementIsVisible(By.XPath("//h2[contani(text(),`Welcome back,`)]")));
+           System.Threading.Thread.Sleep(2000);
+           return new HomePage(this.driver);
+            registracija.NewUser.Click();
+            registracija.Promotions.Click();
+            registracija.RegisterButton.Click();
+        }
+        [Test]
+        [Category("shop.qa.rs")]č
+        public void TestShopQaRslogin()
+        {         
+            CSVHandler CSV = new CSVHandler();
+            Excel.Worksheet Sheet = CSV.OpenCSV(@"D:\Kurs\ddt.csv");
+
+            int rows = Sheet.UsedRange.Rows.Count;
+            int columns = Sheet.UsedRange.Colums.Count;
+
+            testComtext.Writeline("Rows:{0} Colums:{1}", rows, colums);
+
+            ShopQaHomePage home = new ShopQaHomePage(driver);
+            home.GoToPage();
+            ShopQaLoginPage login = home.ClickOnLoginLink();
+            
+            home = login.login("aaa")
+            if (home.Welcome aaa )
+            {
+             Assert.Pass();
+            }else
+            {
+             Assert(Welcome Back, aaa!);
+
+        Click Button "STARTER" "ORDER NOW";
+        int rows = Qualiti Assurance(QA)course-Order #176;
+
+            Click Button "Checkout"
+            int rows = "Quality Assurance (QA) Shop";
+            if ( You have successfully placed your order.(OrderablePartitioner #176)));
+                
+             Click Button "Continue shopping";
+            int rows = "Quality Assurance (QA) Shop";
+
+        Click Button "STARTER" "ORDER NOW";
+        int rows = Qualiti Assurance(QA)course - Order #177;
+
+             Click Button "Checkout"
+            int rows = "Quality Assurance (QA) Shop";
+            if (You have successfully placed your order.(OrderablePartitioner #176)));
+
+
+             Click Button "Go back to the site";
+             int rows = "Quality Assurance (QA) Shop";
+
+        Click  "Wiew shopping cart";
+        int rows = Qualiti Assurance(QA)course - Order #176;
+
+            view in rows = STARTER "twu pieces, for $300 ";
+            view in rows = Shipping "FREE";
+            view in rows = Total "$ 600";
+
+    testConteks.Writeline("Pass")
+
+
+
+
+
+
+
